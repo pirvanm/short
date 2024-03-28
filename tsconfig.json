@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "strict": true,
+        "jsx": "preserve",
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "allowJs": true,
+        "lib": ["esnext", "dom"],
+        "types": ["@types/node", "vue-sweetalert2"],
+        "paths": {
+            "@/*": ["./resources/ts/*"]
+        },
+        "outDir": "./public/build/assets"
+    },
+    "typeRoots": ["./node_modules/@types", "resources/ts/types"],
+    "include": [
+       "resources/ts/**/*.tsts",
+       "resources/ts/**/*.d.tsts",
+       "resources/ts/**/*.vueue"
+    ],
+    "exclude": ["node_modules", "public"]
+}
